@@ -64,6 +64,22 @@ CB001,0,4,3,0
 CB001,0,4,4,1
 ```
 
+## SFS plots
+
+Generate two PDFs from the exported per-donor CSVs:
+
+```bash
+uv run python -m mitchell_sfs.plot
+uv run python -m mitchell_sfs.plot "/path/to/sfs"
+```
+
+Both PDFs are saved in the SFS directory: `sfs_by_donor.pdf` and
+`sfs_by_donor_normalised.pdf`. Donor panels are ordered by age, use log–log
+scales, share x and y axes within each figure, and omit zero-count bins.
+The normalised figure divides cell counts by each donor's `sampled_cells`
+and mutation counts by that donor's total mutation count (so they sum to 1).
+Both figures use the same plotting function, with a `normalise` option.
+
 ## Python interface
 
 ```python

@@ -8,6 +8,7 @@ license = "MIT"
 license-files = ["LICENSE"]
 dependencies = [
     "jaxtyping",
+    "matplotlib>=3.11.2",
     "numpy",
     "pandas",
 ]
