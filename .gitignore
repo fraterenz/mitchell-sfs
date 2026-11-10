@@ -1,0 +1,15 @@
+# Allow only project metadata, Python source, and synthetic test code.
+# All other files and directories, including data, outputs, archives,
+# environments, and caches, are ignored regardless of their filenames.
+*
+!/.gitignore
+!/.python-version
+!/pyproject.toml
+!/uv.lock
+!/README.md
+!/LICENSE
+!/src/
+!/src/mitchell_sfs/
+!/src/mitchell_sfs/*.py
+!/tests/
+!/tests/*.py
